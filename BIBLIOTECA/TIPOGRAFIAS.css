@@ -1,0 +1,134 @@
+@import url('../FUENTES/chillax.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.CuerpoLectura {
+    background-color: #e5e5e5;
+    background-image: radial-gradient(#bcbcbc 1px, transparent 1px);
+    background-size: 30px 30px;
+    font-family: 'Chillax-Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.ContenedorPapel {
+    background-color: #fdfdfd;
+    width: 100%;
+    max-width: 850px;
+    min-height: 100vh;
+    padding: 60px 80px;
+    box-shadow: 15px 15px 0px rgba(0,0,0,0.1);
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.ContenedorPapel::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(255, 0, 0, 0.2);
+}
+
+.EncabezadoHoja {
+    border-bottom: 3px solid #000;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.Folio {
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.TituloHoja {
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #1a1a1a;
+    margin: 10px 0;
+}
+
+.SubtituloHoja {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    color: #d14131;
+}
+
+.SeccionTexto {
+    margin-bottom: 40px;
+}
+
+.Indice {
+    font-size: 1.2rem;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 2px 10px;
+    margin-bottom: 15px;
+}
+
+.SeccionTexto p {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.ListaCodigos {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.ListaCodigos li {
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.ListaCodigos b {
+    color: #000;
+}
+
+.BloqueCodigo {
+    background: #1a1a1a;
+    color: #ffd700;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.TablaAtajos {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+}
+
+.TablaAtajos td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.TablaAtajos td:first-child {
+    font-weight: bold;
+    color: #d14131;
+}
+
+.PiePagina {
+    margin-top: 80px;
+    text-align: center;
+    border-top: 1px dashed #ccc;
+    padding-top: 20px;
+    font-size: 0.7rem;
+    color: #aaa;
+    letter-spacing: 4px;
+}

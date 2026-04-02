@@ -1,0 +1,219 @@
+@import url('../FUENTES/chillax.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chillax-Bold';
+    margin-top: 10%;
+    overflow-x: hidden;
+    background-color: #121212;
+    background-image: radial-gradient(#333 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #ffffff;
+    min-height: 100vh;
+    animation: fadeInPage 1.5s ease-in-out forwards;
+}
+
+main {
+    animation: fadeInContent 2s ease-in-out forwards;
+}
+
+/* BIENVENIDA */
+
+.Seccion1 {
+    display: flex;
+    height: 90%;
+    margin: 2% 4%;
+    display: flex;
+    position: relative;
+}
+
+.sticker {
+    position: absolute;
+    z-index: 5;
+    pointer-events: none; 
+    width: 100px;
+    height: auto;
+}
+
+.Seccion2 {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.Seccion2 H1 {
+    font-family: 'Chillax-Bold';
+    font-weight: 700;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #F7F6F3
+}
+
+.Seccion2 p {
+    color: #F7F6F3;
+}
+
+.Seccion3 {
+    padding: 1% 4%;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.Seccion3 H1 {
+    font-family: 'Modeska', sans-serif;
+    font-weight: 900; 
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+
+.Seccion3 P {
+    font-family: 'Modeska', sans-serif;
+    font-weight: 700;
+    color: #121212;
+    position: absolute;
+    left: 8%;
+    top: 40%;
+    width: 22vw;
+}
+
+.Seccion3 img {
+    rotate: 5grad;
+    height: 70vh;
+    width: auto;
+}
+
+/* TENDENCIAS */
+
+.TituloTendencias {
+    width: 95%;
+    justify-self:center;
+    margin: 50px 0;
+
+}
+
+.TituloTendencias div {
+    width: 50%;
+}
+
+.TituloTendencias H1 {
+    font-size: 3rem;
+}
+
+.SeccionTendencias {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    overflow: hidden;
+    background-color: #121212;
+    position: relative;
+    border-top: 15px solid #bbbbbb;
+    border-bottom: 15px solid #bbbbbb;
+    margin-bottom: 80px;
+}
+
+.ContenedorCinta {
+    display: flex;
+    width: max-content;
+    background: #121212;
+    background-image: linear-gradient(90deg, #939393 2px, transparent 2px);
+    background-size: 120px 100%;
+    display: flex; 
+    animation: scrollHorizontal 25s Linear infinite;
+}
+
+.CintaTransportadora {
+    display: flex;
+    gap: 80px;
+    padding: 20px 40PX; }
+
+@keyframes scrollHorizontal {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }}
+
+.TarjetaTendencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    min-width: 250px;
+    position: relative;
+}
+
+.TarjetaTendencia img {
+    max-width: 180px;
+    height: auto;
+    transition: transform 0.3s ease;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.InfoTendencia {
+    z-index: 10;
+    position: relative; 
+    text-align: center;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.7);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.TarjetaTendencia:hover {
+    box-shadow: #000;
+    transform: translateY(-5px);
+}
+
+.TarjetaTendencia h3 {
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.TarjetaTendencia p {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 0;
+}
+
+.SeccionTendencias::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 2;
+}
+
+.SeccionTendencias::before {
+    left: 0;
+    background: linear-gradient(to right, #000, transparent);
+}
+
+.s1 {
+    width: 300PX;
+    top: 190px;
+    left: 60%;
+    transform: rotate(-15deg);
+}
+
+.s2 {
+    bottom: 10%;
+    right: 5%;
+    transform: rotate(10deg);
+}
+
+@keyframes fadeInContent {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

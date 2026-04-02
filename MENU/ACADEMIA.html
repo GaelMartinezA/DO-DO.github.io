@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DO-DO | Academia</title>
+    <link rel="stylesheet" href="ACADEMIA.css">
+    <link rel="stylesheet" href="MENU.css">
+    <link rel="stylesheet" href="../FUENTES/chillax.css">
+</head>
+<body>
+    <main>
+        <h1 class="Titulo">Academia</h1>
+        <p class="SubtituloPagina">En este modulo encontraras capsulas de conocimiento complementario para tus proyectos y tu desarrollo</p>
+
+        <div class="Contenedor">
+        <section class="SeccionAnaquel">
+            <h2 class="TituloSeccion">Categorias</h2>
+            
+            <div class="RejillaProductos">
+                
+                <article class="Caja no-disponible" data-categoria="proximamente">
+                    <img src="../ELEMENTOS/11.png" class="ImagenCaja">
+                    <div class="ContenidoCaja">
+                        <h3 class="TituloCaja">Teoría e<br>Investigación</h3>
+                    </div>
+                </article>
+
+                <article class="Caja no-disponible" data-categoria="proximamente">
+                    <img src="../ELEMENTOS/11.png" class="ImagenCaja">
+                    <div class="ContenidoCaja">
+                        <h3 class="TituloCaja">Diseño<br>Gráfico</h3>
+                    </div>
+                </article>
+
+                <article class="Caja no-disponible" data-categoria="proximamente">
+                    <img src="../ELEMENTOS/11.png" class="ImagenCaja">
+                    <div class="ContenidoCaja">
+                        <h3 class="TituloCaja">Diseño<br>Integral</h3>
+                    </div>
+                </article>
+
+            </div>
+            <div class="Base"></div>
+            <div class="BarraAnaquel"></div>
+            
+            <div class="RejillaProductos">
+                
+                <article class="Caja no-disponible" data-categoria="proximamente">
+                    <img src="../ELEMENTOS/11.png" class="ImagenCaja">
+                    <div class="ContenidoCaja">
+                        <h3 class="TituloCaja">Leyes y<br>Derecho</h3>
+                    </div>
+                </article>
+
+                <article class="Caja no-disponible" data-categoria="proximamente">
+                    <img src="../ELEMENTOS/11.png" class="ImagenCaja">
+                    <div class="ContenidoCaja">
+                        <h3 class="TituloCaja">Finanzas y<br>Negocios</h3>
+                    </div>
+                </article>
+
+                <article class="Caja" onclick="location.href='../ACADEMIA/WEB.html'">
+                    <img src="../ELEMENTOS/11.png" class="ImagenCaja">
+                    <div class="ContenidoCaja">
+                        <h3 class="TituloCaja">Programacion<br>y Web</h3>
+                    </div>
+                </article>
+
+            </div>
+            <div class="Base"></div>
+            <div class="BarraAnaquel"></div>
+
+             <div class="RejillaProductos">
+                
+                <article class="Caja" onclick="irALeccion('gestion')">
+                    <img src="../ELEMENTOS/12.png" class="ImagenCaja2">
+                    <div class="ContenidoCaja2">
+                        <h3 class="TituloCaja">Proximamente</h3>
+                    </div>
+                </article>
+
+                <article class="Caja" onclick="irALeccion('gestion')">
+                    <img src="../ELEMENTOS/12.png" class="ImagenCaja2">
+                    <div class="ContenidoCaja2">
+                        <h3 class="TituloCaja">Proximamente</h3>
+                    </div>
+                </article>
+
+                <article class="Caja" onclick="irALeccion('3d')">
+                    <img src="../ELEMENTOS/12.png" class="ImagenCaja2">
+                    <div class="ContenidoCaja2">
+                        <h3 class="TituloCaja">Proximamente</h3>
+                    </div>
+                </article>
+            </div>
+            <div class="Base"></div>
+            <div class="BarraAnaquel"></div>
+        </section>
+
+        <section class="SeccionDescripcion">
+            <h1 id="nota-titulo">NOTAS</h1>
+            <img src="../ELEMENTOS/14.png">
+            <p id="nota-texto">Selecciona una categoría para ver el detalle.</p>
+        <div class="BotonEntrar"><img src="../ELEMENTOS/15.png"></div>
+</section>
+
+<article class="Caja" onclick="irALeccion('gestion')" data-categoria="teoria">
+    </article>
+
+        </div>
+    </main>
+
+    <script src="../Script.js"></script>
+    <script src="MENU.js"></script> 
+</body>
+</html>

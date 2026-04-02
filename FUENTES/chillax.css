@@ -1,0 +1,90 @@
+/**
+* @license
+*
+* Font Family: Chillax
+* Designed by: Manushi Parikh
+* URL: https://www.fontshare.com/fonts/chillax
+* © 2026 Indian Type Foundry
+*
+* Chillax Extralight 
+* Chillax Light 
+* Chillax Regular 
+* Chillax Medium 
+* Chillax Semibold 
+* Chillax Bold 
+* Chillax Variable (Variable font)
+
+*
+*/
+@font-face {
+  font-family: 'Chillax-Extralight';
+  src: url('../FUENTES/chillax/Chillax-Extralight.woff2') format('woff2'),
+       url('../FUENTES/chillax/Chillax-Extralight.woff') format('woff'),
+       url('../FUENTES/chillax/Chillax-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Chillax-Light';
+  src: url('../FUENTES/chillax/Chillax-Light.woff2') format('woff2'),
+       url('../FUENTES/chillax/Chillax-Light.woff') format('woff'),
+       url('../FUENTES/chillax/Chillax-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Chillax-Regular';
+  src: url('../FUENTES/chillax/Chillax-Regular.woff2') format('woff2'),
+       url('../FUENTES/chillax/Chillax-Regular.woff') format('woff'),
+       url('../FUENTES/chillax/Chillax-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Chillax-Medium';
+  src: url('../FUENTES/chillax/Chillax-Medium.woff2') format('woff2'),
+       url('../FUENTES/chillax/Chillax-Medium.woff') format('woff'),
+       url('../FUENTES/chillax/Chillax-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Chillax-Semibold';
+  src: url('../FUENTES/chillax/Chillax-Semibold.woff2') format('woff2'),
+       url('../FUENTES/chillax/Chillax-Semibold.woff') format('woff'),
+       url('../FUENTES/chillax/Chillax-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Chillax-Bold';
+  src: url('../FUENTES/chillax/Chillax-Bold.woff2') format('woff2'),
+       url('../FUENTES/chillax/Chillax-Bold.woff') format('woff'),
+       url('../FUENTES/chillax/Chillax-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0;
+*
+* available axes:
+'wght' (range from 200.0 to 700.0
+*/
+@font-face {
+  font-family: 'Chillax';
+  src: url('../fonts/Chillax-Variable.woff2') format('woff2'),
+       url('../fonts/Chillax-Variable.woff') format('woff'),
+       url('../fonts/Chillax-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+

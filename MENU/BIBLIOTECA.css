@@ -1,0 +1,125 @@
+@import url('../FUENTES/chillax.css');
+
+body {
+    background-color: #F7F6F3; 
+    margin: 0;
+    padding-top: 80PX;
+    color: #F7F6F3;
+    font-family: 'Chillax-Bold', sans-serif !important;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: radial-gradient(#121212 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+.ContenedorTablero {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.TituloPagina {
+    font-weight: 700;
+    color: #121212;
+    font-size: 4.5rem;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: -3px;
+}
+
+.SubtituloPagina {
+    color: #5e4333;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.MallaPerforada {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    padding: 40px;
+    justify-items: center;
+}
+
+.ContenedorBlister {
+    position: relative;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Bloqueo {
+    z-index: 300;
+    font-size: 1rem;
+    color: #d13e3e;
+    position: absolute;
+    top: 185px;
+    left: 50%;
+    width: 150px;
+    transform: translateX(-50%);
+    background: #222;
+}
+
+.GanchoMetalico {
+    width: 10px;
+    height: 40px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #2a2a2a, #959595, #272727);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    position:absolute;
+    z-index: 2;
+    top: -20px;
+}
+
+.GanchoMetalico::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #222;
+    border-radius: 50%;
+}
+
+.TarjetaBlister {
+    position: relative;
+    width: 100%;
+    filter: drop-shadow(1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.ImagenBlister {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.InfoBlister {
+    margin: auto;
+    width: 70%;
+    position:absolute;
+    top: 10%;
+    left: 15%;
+}
+
+.InfoBlister h3 {
+    font-family: "Chillax-Bold";
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.TarjetaBlister:hover {
+    animation: columpioBlister 2s ease-in-out infinite;
+    transform-origin: top center;
+}
+
+@keyframes columpioBlister {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+}

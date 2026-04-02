@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DO-DO | LABORATORIO 2</title>
+    <link rel="stylesheet" href="LAB2.css">
+    <link rel="stylesheet" href="..//MENU/MENU.css">
+    <link rel="stylesheet" href="../FUENTES/chillax.css">
+</head>
+<body>
+    <div class="ContenedorLaboratorio">
+        <div class="MaquinaRoja">
+            <div class="PantallaJuego">
+                <img src="../ELEMENTOS/12.png" >
+                <div id="Cuerda" class="Cuerda"></div>
+                <img src="../ELEMENTOS/32.png" id="Garra" alt="Garra">
+                <div id="ZonaPremios"></div>
+            </div>
+
+            <div class="PanelControl">
+                <div class="ContenedorTitulo">
+                    <h1 class="TituloLab">LA GARRA DE ESTILOS</h1>
+                </div>
+                
+                <div class="ZonaJoystick">
+                    <div class="BasePalanca">
+                        <div id="Palanca"></div>
+                    </div>
+                </div>
+
+                <div class="ZonaBoton">
+                    <button class="BotonAccion" id="BtnBajar" onclick="BajarGarra()">CAPTURAR ESTILO</button>
+                </div>
+            </div>
+
+            <div class="BuzonSalida">
+                <div id="ResultadoBusqueda">ESPERANDO SEÑAL...</div>
+            </div>
+        </div>
+    </div>
+    <script src="LAB2.js"></script>
+    <script src="../MENU/MENU.js"></script>
+</body>
+</html>

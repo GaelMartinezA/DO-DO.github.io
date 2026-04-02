@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DO-DO | LAB ESTILOS</title>
+    <link rel="stylesheet" href="LAB3.css">
+    <link rel="stylesheet" href="../MENU/MENU.css">
+</head>
+
+<body class="PANTALLA">
+
+    <main class="ChasisMaquina">
+        
+        <aside class="PanelControl LateralIzquierdo">
+            <div class="ModuloTecnico">
+                <label>SISTEMA GLOBAL</label>
+                <button onclick="PaletaAleatoria()" class="BotonStart">INICIAR 🎲</button>
+            </div>
+
+            <div class="ModuloTecnico">
+                <label>FILTROS DE COLOR</label>
+                <div class="RejillaMicro">
+                    <button onclick="CambiarSoloPrimario()">PRIMARIO</button>
+                    <button onclick="CambiarSoloTexto()">TEXTO</button>
+                    <button onclick="CambiarSoloFondo()">FONDO</button>
+                    <button onclick="AplicarGradiente()">GRADIENTE</button>
+                </div>
+            </div>
+        </aside>
+
+        <section class="VisualizadorCentral">
+            <div class="MarcoPantalla">
+                <div class="Escenario" id="EscenarioPrincipal">
+                    <div class="VistaCarta" id="CartaMuestra">
+                        <span class="Etiqueta">COMPOSICIÓN VIVA</span>
+                        <h1>DISEÑA CON EL CÓDIGO.</h1>
+                        <p>ENTORNO DINÁMICO BASADO EN ALGORITMOS DE COLOR.</p>
+                        <button class="BotonAccionInterno">VER PROYECTO</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="PanelControl LateralDerecho">
+            <div class="ModuloTecnico">
+                <label>ESTRUCTURA VISUAL</label>
+                <select id="SelectorDiseno" onchange="CambiarDiseno(this.value)">
+                    <option value="moderno">MODERNO</option>
+                    <option value="brutalista">BRUTALISTA</option>
+                    <option value="cristal">CRISTAL</option>
+                </select>
+            </div>
+
+            <div class="ModuloTecnico">
+                <label>TIPOGRAFÍA</label>
+                <div class="RejillaMicro">
+                    <button onclick="CambiarFuente('Chillax-Bold')">CHILLAX</button>
+                    <button onclick="CambiarFuente('Inter')">INTER</button>
+                    <button onclick="CambiarFuente('Space Mono')">MONO</button>
+                    <button onclick="CambiarFuente('Arial')">SANS</button>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+
+    <script src="LAB3.js"></script>
+    <script src="../MENU/MENU.js"></script>
+</body>
+</html>
