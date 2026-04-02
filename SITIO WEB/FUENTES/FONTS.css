@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Crostan';
+  src: url('FUENTES/CrostanLight-MAJPv.otf') format('opentype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Crostan';
+  src: url('FUENTES/CrostanRegular-2vLaX.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Crostan';
+  src: url('FUENTES/CrostanMedium-KVGme.otf') format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Crostan';
+  src: url('FUENTES/CrostanSemiBold-PVPgE.otf') format('opentype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Crostan';
+  src: url('FUENTES/CrostanBold-rvm6K.otf') format('opentype');
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: 'Modeska';
+  src: url('FUENTES/ModeskaTrialThin-ZpyKl.ttf') format('truetype');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Modeska';
+  src: url('FUENTES/ModeskaTrialExtraLight-e91wO.ttf') format('truetype');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Modeska';
+  src: url('FUENTES/ModeskaTrialLight-WpJz9.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Modeska';
+  src: url('FUENTES/ModeskaTrialRegular-E4pgg.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Modeska';
+  src: url('FUENTES/ModeskaTrialMedium-aYaBJ.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Modeska';
+  src: url('FUENTES/ModeskaTrialSemiBold-OGMZo.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Modeska';
+  src: url('FUENTES/ModeskaTrialBold-4n43Y.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Modeska';
+  src: url('FUENTES/ModeskaTrialExtraBold-0vgDr.ttf') format('truetype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Modeska';
+  src: url('FUENTES/ModeskaTrialBlack-ovMBq.ttf') format('truetype');
+  font-weight: 900;
+}

@@ -1,0 +1,146 @@
+@import url('../FUENTES/chillax.css');
+
+body {
+    background-position: center;
+    background-color: #F7F6F3;
+    background-image: 
+    linear-gradient(#86abff 1px, transparent 1px),
+    linear-gradient(90deg, #86abff 1px, transparent 1px);
+    background-size: 60px 60px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Chillax-Bold', sans-serif !important;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.ContenedorTablero {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.TituloPagina {
+    font-weight: 700;
+    color: #121212;
+    font-size: 4.5rem;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: -3px;
+}
+
+.SubtituloPagina {
+    color: #5e4333;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.SelectorJuegos {
+    width: 100%;
+    height: 78vh;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scrollbar-width: none;
+    padding-bottom: 80px;
+}
+
+.SelectorJuegos::-webkit-scrollbar { display: none; }
+
+.CarruselInterno {
+    height: 70vh;
+    display: flex;
+    gap: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.Maquina {
+    flex: 0 0 auto;
+    height: 100%;
+    width: auto;
+    text-align: center;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0.5;
+    transform: scale(0.85);
+    filter: grayscale(100%);
+    cursor: pointer;
+    position: relative;
+}
+
+.Maquina:hover, .Maquina.Activa {
+    opacity: 1;
+    transform: scale(1.1) rotate(-2deg) grayscale(0%);
+    filter: drop-shadow(0 0 30px rgba(255,255,255,0.2));
+}
+
+.ImagenMaquina {
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.FichaTecnica {
+    margin-top: 20px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.Maquina:hover .FichaTecnica, .Maquina.Activa .FichaTecnica {
+    opacity: 1;
+}
+
+.TituloJuego {
+    font-size: 3rem;
+    letter-spacing: -1px;
+    margin: 0;
+    max-width: 300px;
+}
+
+.Accion {
+    margin-top: 40px;
+    animation: fadeIn 0.5s forwards;
+}
+
+.BotonEjecutar {
+    background: #ffc720;
+    color: #121212;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 40px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    cursor: pointer;
+    box-shadow: #c99c14 4px 4px;
+}
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+.JuegoBloqueado {
+    cursor: not-allowed !important;
+    filter: grayscale(100%) brightness(0.5) !important;
+    opacity: 0.4 !important;
+    pointer-events: none; /* Esto evita que se pueda hacer click */
+}
+
+.JuegoBloqueado:hover {
+    transform: scale(0.85) !important; /* Mantiene el tamaño pequeño */
+}
+
+.EtiquetaBloqueo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    background: #ff4d4d;
+    color: white;
+    padding: 5px 15px;
+    font-size: 1rem;
+    font-weight: 900;
+    border: 3px solid #000;
+    z-index: 20;
+}
